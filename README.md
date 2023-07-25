@@ -10,8 +10,9 @@ Dot files for my personal dev workspace configuration
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Kitty terminal
-curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+# WezTerm
+brew tap homebrew/cask-versions
+brew install --cask wezterm-nightly
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -47,16 +48,6 @@ PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 
 <br>
 
-## Kitty Themes
-
-Change theme for Kitty terminal:
-
-```sh
-kitty +kitten themes # Cobalt Neon
-```
-
-<br>
-
 ## Creating symlinks
 
 ```sh
@@ -64,7 +55,7 @@ kitty +kitten themes # Cobalt Neon
 ln -s .tmux.conf ~/.tmux.conf
 ln -s ~/dev/.dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -s ~/dev/.dotfiles/nvim ~/.config
-ln -s ~/dev/.dotfiles/kitty ~/.config
+ln -s ~/dev/.dotfiles/wezterm ~/.config
 ```
 
 <br>
