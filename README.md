@@ -53,9 +53,9 @@ PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
 ```sh
 # ln -s /path/to/original /path/to/link
 ln -s .tmux.conf ~/.tmux.conf
-ln -s ~/dev/.dotfiles/.p10k.zsh ~/.p10k.zsh
-ln -s ~/dev/.dotfiles/nvim ~/.config
-ln -s ~/dev/.dotfiles/wezterm ~/.config
+ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
+ln -s ~/.dotfiles/nvim ~/.config
+ln -s ~/.dotfiles/wezterm ~/.config
 ```
 
 <br>
