@@ -1,7 +1,6 @@
 return {
     {
         "ThePrimeagen/harpoon",
-        opts = { desc = "harpoon" },
         keys = function()
             return {
                 {
