@@ -23,10 +23,9 @@ brew install tmux
 # Neovim
 brew install neovim
 
-# -- lazy.nvim
-brew install ripgrep
-brew install fd
+# -- Terminal git GUIs
 brew install jesseduffield/lazygit/lazygit
+brew install gitui
 
 # Activity monitor alternative
 brew install stats
