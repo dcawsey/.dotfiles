@@ -17,14 +17,10 @@ brew install --cask wezterm-nightly
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# tmux
-brew install tmux
-
 # Neovim
 brew install neovim
 
-# -- Terminal git GUIs
-brew install jesseduffield/lazygit/lazygit
+# -- Terminal git GUI
 brew install gitui
 
 # Activity monitor alternative
