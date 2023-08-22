@@ -20,26 +20,15 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Neovim
 brew install neovim
 
-# -- Terminal git GUI
+# Terminal git GUI
 brew install gitui
 
 # Activity monitor alternative
 brew install stats
 
-# -- fzf --
+# fuzzy finder for recent terminal commands (CMD + R in terminal)
 brew install fzf
-
-# To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
-
-# Change default macos find to be GNU find
-brew install findutils
-PATH=$(brew --prefix)/opt/findutils/libexec/gnubin:$PATH
-
-# Add grep
-brew install grep
-PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-# -- fzf --
 
 <br>
 
