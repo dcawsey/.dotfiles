@@ -21,7 +21,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 brew install neovim
 
 # Terminal git GUI
-brew install gitui
+brew install lazygit
 
 # Activity monitor alternative
 brew install stats
