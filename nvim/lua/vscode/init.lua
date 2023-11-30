@@ -1,3 +1,3 @@
 require('lazy').setup({
-    'tpope/vim-surround'
+    require 'terminal.kickstart.plugins.vim-surround'
 })
