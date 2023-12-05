@@ -39,6 +39,7 @@ $(brew --prefix)/opt/fzf/install
 ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -s ~/.dotfiles/nvim ~/.config
 ln -s ~/.dotfiles/wezterm ~/.config
+ln -s ~/.dotfiles/zellij ~/.config
 ```
 
 <br>
