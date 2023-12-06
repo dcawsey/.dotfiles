@@ -169,6 +169,7 @@ require('lazy').setup({
   require 'terminal/kickstart.plugins.autoformat',
   require 'terminal/kickstart.plugins.oil',
   require 'terminal/kickstart.plugins.vim-surround',
+  require 'terminal/kickstart.plugins.nvim-autopairs',
   -- require 'kickstart.plugins.debug',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
