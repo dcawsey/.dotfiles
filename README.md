@@ -76,10 +76,14 @@ brew install --cask obs
 
 # From App Store
 brew install mas
-mas install 441258766 # Magnet
-xcode-select --install # XCode CLI tools
-mas install 497799835 # XCode
-mas install 424389933 # Final Cut Pro
+# Magnet
+mas install 441258766
+# XCode CLI tools
+xcode-select --install
+# XCode
+mas install 497799835
+# Final Cut Pro
+mas install 424389933
 ```
 
 <br>
