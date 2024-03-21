@@ -1,20 +1,12 @@
 -- Pull in the wezterm API
-local wezterm = require("wezterm")
+local wezterm = require 'wezterm'
 
--- This table will hold the configuration.
-local config = {}
+-- This will hold the configuration.
+local config = wezterm.config_builder()
 
--- In newer versions of wezterm, use the config_builder which will
--- help provide clearer error messages
-if wezterm.config_builder then
-	config = wezterm.config_builder()
-end
+config.color_scheme = 'Aci'
+config.font_size = 14.0
 
--- This is where you actually apply your config choices
+config.automatically_reload_config = true
 
--- For example, changing the color scheme:
-config.color_scheme = "AdventureTime"
-config.font_size = 18.0
-
--- and finally, return the configuration to wezterm
 return config
