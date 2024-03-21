@@ -1,3 +1,4 @@
+# -- Terminal tools
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/dylan.cawsey/.zprofile
@@ -27,7 +28,6 @@ brew install lazygit
 # Github CLI
 brew install gh
 
-
 # fuzzy finder for recent terminal commands (CTRL + R in terminal)
 brew install fzf
 $(brew --prefix)/opt/fzf/install
@@ -41,7 +41,7 @@ ln -s ~/.dotfiles/nvim ~/.config
 ln -s ~/.dotfiles/wezterm ~/.config
 ln -s ~/.dotfiles/zellij ~/.config
 
-# Apps
+# -- Apps
 # Dev tools
 brew install --cask visual-studio-code
 brew install --cask postman
@@ -63,7 +63,7 @@ brew install --cask affinity-designer
 brew install --cask affinity-photo
 brew install --cask obs
 
-# From App Store
+# App Store installs
 brew install mas
 # Magnet
 mas install 441258766

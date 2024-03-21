@@ -2,10 +2,8 @@
 
 Dot files for my personal dev workspace configuration
 
-<br>
-
 ## Setup
-Clone repo to root directory and then run the below from the root:
+Clone Git repository to root directory and then run the below from the root:
 
 ```sh
 ./.dotfiles/scripts/setup-new-mac.sh
@@ -13,9 +11,29 @@ Clone repo to root directory and then run the below from the root:
 
 <br>
 
-## Neovim in VSCode
+### VSCode
 
-1. Install asvetliakov.vscode-neovim
-2. Follow installation instructions for extension
+1. Sign in with Github and settings should sync
+2. If issues with Neovim, check installation it references
 
-_Note: to find the path of your Neovim installation, run <code>which nvim</code>_
+    _Note: to find the path of your Neovim installation, run <code>which nvim</code>_
+
+<br>
+
+### Mac settings
+
+#### Dock
+1. Turn "Hiding" on
+2. Only show open apps:
+    ```sh
+    defaults write com.apple.dock static-only -bool TRUE; killall Dock
+    ```
+3. Re-add "Downloads" folder to dock left of Trash icon
+
+#### Finder
+1. Show all hidden files/folders
+2. Drag "Home" and "dev" directories to left toolbar for quick access
+
+
+#### Screenshots
+⌘⇧5 to open the screenshot tool, select Options, select Other Location, and select "Downloads"
