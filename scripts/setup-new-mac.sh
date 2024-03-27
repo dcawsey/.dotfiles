@@ -47,6 +47,7 @@ brew install --cask visual-studio-code
 brew install --cask postman
 brew install --cask docker
 brew install --cask homebrew/cask-versions/firefox-developer-edition
+brew install --cask wireshark
 brew install --cask stats
 
 # Personal
