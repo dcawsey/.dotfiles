@@ -13,10 +13,16 @@ vim.opt.rtp:prepend(lazypath)
 
 require("dcawsey.config")
 
-require("lazy").setup({
+local shared_plugins = {
   "numToStr/Comment.nvim",
   "tpope/vim-surround",
-  "stevearc/oil.nvim"
-})
+}
 
-require("oil").setup()
+if vim.g.vscode then
+  require("lazy").setup(shared_plugins)
+else
+  table.insert(shared_plugins, "stevearc/oil.nvim") -- add Oil plugin when in terminal
+  require("lazy").setup(shared_plugins)
+
+  require("oil").setup()
+end
