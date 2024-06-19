@@ -21,8 +21,15 @@ local shared_plugins = {
 if vim.g.vscode then
   require("lazy").setup(shared_plugins)
 else
-  table.insert(shared_plugins, "stevearc/oil.nvim") -- add Oil plugin when in terminal
-  require("lazy").setup(shared_plugins)
+  local terminal_plugins = {
+    "stevearc/oil.nvim",
+    'cohama/lexima.vim',
+  }
+  for _,v in ipairs(shared_plugins) do
+     table.insert(terminal_plugins, v)
+  end
+
+  require("lazy").setup(terminal_plugins)
 
   require("oil").setup()
 end
