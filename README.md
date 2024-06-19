@@ -24,16 +24,11 @@ Clone Git repository to root directory and then run the below from the root:
 
 #### Dock
 1. Turn "Hiding" on
-2. Only show open apps:
-    ```sh
-    defaults write com.apple.dock static-only -bool TRUE; killall Dock
-    ```
-3. Re-add "Downloads" folder to dock left of Trash icon
+2. Add "Downloads" folder to dock left of Trash icon
 
 #### Finder
 1. Show all hidden files/folders
 2. Drag "Home" and "dev" directories to left toolbar for quick access
-
 
 #### Screenshots
 ⌘⇧5 to open the screenshot tool, select Options, select Other Location, and select "Downloads"
