@@ -14,6 +14,6 @@ vim.opt.rtp:prepend(lazypath)
 require("dcawsey.config")
 
 require("lazy").setup({
-    "numToStr/Comment.nvim",
-    "tpope/vim-surround"
+  "numToStr/Comment.nvim",
+  "tpope/vim-surround"
 })
