@@ -15,5 +15,8 @@ require("dcawsey.config")
 
 require("lazy").setup({
   "numToStr/Comment.nvim",
-  "tpope/vim-surround"
+  "tpope/vim-surround",
+  "stevearc/oil.nvim"
 })
+
+require("oil").setup()
