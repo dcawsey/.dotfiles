@@ -30,6 +30,5 @@ else
   end
 
   require("lazy").setup(terminal_plugins)
-
   require("oil").setup()
 end
