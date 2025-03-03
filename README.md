@@ -18,6 +18,11 @@ Clone Git repository to root directory and then run the below from the root:
 
     _Note: to find the path of your Neovim installation, run <code>which nvim</code>_
 
+3. Run the following for extension to allow holding motion keys (h,j,k,l) in normal mode for VSCode:
+```sh
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
+
 <br>
 
 ### Mac settings
