@@ -40,6 +40,7 @@ ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -s ~/.dotfiles/nvim ~/.config
 ln -s ~/.dotfiles/wezterm ~/.config
 ln -s ~/.dotfiles/zellij ~/.config
+ln -s ~/.dotfiles/.prettierrc.json ~/.config
 
 # -- Apps
 # Dev tools
