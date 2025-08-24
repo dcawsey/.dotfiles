@@ -1,3 +1,5 @@
+vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
@@ -23,8 +25,10 @@ if vim.g.vscode then
 else
   local terminal_plugins = {
     "stevearc/oil.nvim",
-    'cohama/lexima.vim',
+    "cohama/lexima.vim",
+    "ibhagwan/fzf-lua",
   }
+
   for _,v in ipairs(shared_plugins) do
      table.insert(terminal_plugins, v)
   end
