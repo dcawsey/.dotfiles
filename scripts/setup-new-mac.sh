@@ -13,8 +13,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # Powerlevel10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-# Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
-sed -i '' 's@robbyrussell@powerlevel10k/powerlevel10k@g' ~/.zshrc
 
 # Neovim
 brew install neovim
@@ -25,9 +23,6 @@ brew install zellij
 # Terminal git GUI
 brew install lazygit
 
-# Github CLI
-brew install gh
-
 # fuzzy finder for recent terminal commands (CTRL + R in terminal)
 brew install fzf
 $(brew --prefix)/opt/fzf/install
@@ -36,11 +31,13 @@ source ~/.zshrc
 # Creating symlinks
 ```sh
 # ln -s /path/to/original /path/to/link
+ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 ln -s ~/.dotfiles/nvim ~/.config
 ln -s ~/.dotfiles/wezterm ~/.config
 ln -s ~/.dotfiles/zellij ~/.config
 ln -s ~/.dotfiles/.prettierrc.json ~/.config
+ln -s ~/.dotfiles/.asdfrc ~/.asdfrc
 
 # -- Apps
 # Dev tools
